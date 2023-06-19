@@ -30,6 +30,10 @@ def initialize_git_repo(path: Path) -> None:
                 "git",
                 "-C",
                 str(path),
+                "-c",
+                "user.name={{ cookiecutter.author }}",
+                "-c",
+                "user.email={{ cookiecutter.email }}",
                 "commit",
                 "--quiet",
                 "--allow-empty",
@@ -46,7 +50,21 @@ def initialize_git_repo(path: Path) -> None:
 
     # Add setup to dev branch.
     call(["git", "-C", str(path), "add", "."])
-    call(["git", "-C", str(path), "commit", "--quiet", "-m", "Initial commit."])
+    call(
+        [
+            "git",
+            "-C",
+            str(path),
+            "-c",
+            "user.name={{ cookiecutter.author }}",
+            "-c",
+            "user.email={{ cookiecutter.email }}",
+            "commit",
+            "--quiet",
+            "-m",
+            "Initial commit.",
+        ]
+    )
 
 
 def main() -> None:
