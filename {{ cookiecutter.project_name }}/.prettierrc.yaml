@@ -1,0 +1,6 @@
+printWidth: 88
+tabWidth: 4
+useTabs: false
+singleQuote: false
+proseWrap: always
+endOfLine: auto

@@ -1,0 +1,10 @@
+{
+    "project_name": "project-name",
+    "package_name": "{{ cookiecutter.project_name|lower|replace(' ', '_')|replace('-', '_') }}",
+    "author": "Project author name",
+    "email": "Project author email",
+    "github_username": "Project author Github username",
+    "description": "A short description. No quotes.",
+    "version": "0.0.1",
+    "command_line_interface": ["click", "none"]
+}
