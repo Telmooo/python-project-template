@@ -33,13 +33,14 @@ skip_gitignore = true
 
 [tool.mypy]
 python_version = "3.11"
+files="."
+exclude = [
+    "{{ cookiecutter\\..* }}/__init__\\.py",
+]
 show_column_numbers = true
 show_error_codes = true
 strict = true
 warn_unreachable = true
-exclude = [
-    "^{{ cookiecutter.* }}/__init__.py$",
-]
 
 [[tool.mypy.overrides]]
 module = [

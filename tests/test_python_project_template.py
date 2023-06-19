@@ -23,7 +23,6 @@ REQUIRED_FILE = [
     "LICENSE",
     "README.md",
     "VERSION",
-    "mypy.ini",
     "poetry.toml",
     "pyproject.toml",
 ]
