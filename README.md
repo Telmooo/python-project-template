@@ -110,4 +110,5 @@ example-project                 # Project root (chosen project name)
 │           __init__.py         # Makes package a Python module
 │
 └───tests                       # Directory containing tests
+        conftest.py             # Pytest configuration
 ```
