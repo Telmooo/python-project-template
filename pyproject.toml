@@ -5,6 +5,8 @@ description = "A template for Python projects using Poetry."
 authors = ["Telmooo <telmoabaptista@hotmail.com>"]
 license = "GPL-3.0-or-later"
 readme = "README.md"
+homepage = "https://github.com/Telmooo/python-project-template"
+repository = "https://github.com/Telmooo/python-project-template"
 
 [tool.poetry.dependencies]
 python = "^3.11"
